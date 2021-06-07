@@ -16,6 +16,12 @@ let users = {
     name: "Dan Abramov",
     avatarURL: "https://tylermcginnis.com/would-you-rather/dan.jpg",
     tweets: ['5w6k1n34dkp1x29cuzn2zn', 'czpa59mg577x1oo45cup0d', 'omdbjl68fxact38hk7ypy6', '3km0v4hf1ps92ajf4z2ytg', 'njv20mq7jsxa6bgsqc97', 'sfljgka8pfddbcer8nuxv', 'r0xu2v1qrxa6ygtvf2rkjw'],
+  },
+  joel_edwards: {
+    id: "trinifellah",
+    name: "Joel Edwards",
+    avatarURL: "https://pbs.twimg.com/profile_images/975761506330710016/VLrLvbew_400x400.jpg",
+    tweets: ['975761506330710016'],
   }
 }
 
@@ -198,6 +204,15 @@ let tweets = {
     timestamp: 1510044395650,
     likes: ['tylermcginnis'],
     replyingTo: "6h5ims9iks66d4m7kqizmv",
+    replies: [],
+  },
+  "975761506330710016": {
+    id: "975761506330710016",
+    author: "joel_edwards",
+    text: "This is also a great idea.",
+    timestamp: 1510044395651,
+    likes: ['tylermcginnis'],
+    replyingTo: null,
     replies: [],
   },
 }
