@@ -21,15 +21,14 @@ export default function users(state={}, action) {
             const { tweet } = action
 
             let replyingTo = {}
-        if (tweet.replyingTo !== null) {
-            replyingTo = {
-                [tweet.replyingTo]: {
-                    ...state[tweet.replyingTo],
-                    replies: state[tweet.replyTo].replies.concat([tweet.id])
+            if (tweet.replyingTo !== null) {
+                replyingTo = {
+                    [tweet.replyingTo]: {
+                        ...state[tweet.replyingTo],
+                        replies: state[tweet.replyingTo].replies.concat([tweet.id])
+                    }
                 }
             }
-        }
-
             return {
                 ...state,
                 [action.tweet.id]: action.tweet,
